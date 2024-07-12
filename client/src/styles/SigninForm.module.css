@@ -1,0 +1,34 @@
+.FormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #e83e8c;
+    cursor: pointer;
+}

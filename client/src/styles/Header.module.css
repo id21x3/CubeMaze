@@ -1,0 +1,45 @@
+.header {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkText {
+    margin-right: 0.5rem;
+}
+
+.userIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/user-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

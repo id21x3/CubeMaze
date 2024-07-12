@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Game On</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" /> <!-- Ссылка на внешний CSS -->
+</head>
+<body>
+<script th:href="@{/js/script.js}"></script>
+<div class="game-container">
+    <div class="level" th:utext="${htmlField}">
+    </div>
+    <div class="controls">
+        <form method="POST" action="/cubemaze/move">
+            <button name="direction" value="W">W</button>
+            <button name="direction" value="A">A</button>
+            <button name="direction" value="S">S</button>
+            <button name="direction" value="D">D</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

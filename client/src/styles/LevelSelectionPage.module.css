@@ -1,0 +1,60 @@
+/* LevelSelectionPage.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 135px);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 135px);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.levelGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    gap: 20px;
+}
+
+.levelIcon {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%; /* Ширина занимает всю доступную область столбца */
+    height: auto;
+    padding: 5px; /* Добавляем небольшой отступ */
+}
+
+.levelImage {
+    max-width: 100px; /* Максимальная ширина иконки */
+    max-height: 100px; /* Максимальная высота иконки */
+    width: auto;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.levelIcon:hover .levelImage {
+    transform: scale(1.1); /* Увеличиваем иконку при наведении */
+}
+
+
+.locked {
+    cursor: not-allowed;
+}
+
+.lockedIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/level-icon-lock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

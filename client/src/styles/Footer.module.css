@@ -1,0 +1,51 @@
+.footer {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* Footer.module.css */
+.link {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkText {
+    margin-left: 0.5rem;
+}
+
+.playIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/play-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.infoIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/info-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.userIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/user-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

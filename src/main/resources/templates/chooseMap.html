@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Choose Level</title>
+</head>
+<body>
+<h1>Choose a level</h1>
+<form th:action="@{/cubemaze/selectMap}" method="post">
+    <div th:each="level, iterStat : ${levels}">
+        <input type="radio" th:id="${'level' + iterStat.index}" th:name="levelIndex"
+               th:value="${iterStat.index}" th:disabled="${iterStat.index > lastLevel}" />
+        <label th:for="${'level' + iterStat.index}" th:text="${'Level ' + (iterStat.index + 1)}"></label><br/>
+    </div>
+    <button type="submit">Start Game</button>
+</form>
+</body>
+</html>

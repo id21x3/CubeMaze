@@ -1,0 +1,40 @@
+/* homepage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.playButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.playIcon {
+    width: 80px;
+    height: 80px;
+    background-image: url('../assets/play-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.playText {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
